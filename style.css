@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte-titulo: "Bebas Neue", sans-serif;
+    --fonte-texto: "Dosis", sans-serif;
+    --cor1: rgb(103, 94, 173);
+    --cor2: rgb(23, 141, 74);
+    --cor3: #fefee3ff;
+    --cor4: rgb(75, 5, 91);
+    --cor5: #d68c45ff;
+    --cor6: #000000;
+}
+body{
+    font-family: var(--fonte-texto);
+    background-color: var(--cor4);
+    color: var(--cor6);
+    height: 100vh;
+}
+header{
+    background-color: var(--cor1);
+    text-align: center;
+}
+h1{
+    font-family: var(--fonte-titulo);
+    font-size: 2.4rem;
+    padding: 1.2rem 0;
+    color: var(--cor3);
+}
+nav{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+nav a{
+    text-decoration: none;
+    color: var(--cor3);
+    margin: 0 2em 1em 0;
+    font-size: 1.5em
+}
+nav a:hover{
+    text-decoration: underline;
+    font-size: 1.7em;
+    color: var(--cor4);
+    transition: 0.5s;
+}
+
+.caixa-grafico{
+    margin: 3em;
+    border: 3px double var(--cor6);
+    background-color: var(--cor3);
+}
+
+.caixa-grafico__texto{
+    padding: 2em;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor1);
+    color: var(--cor3);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1em;
+}
